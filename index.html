@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio do Diego</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button class="button" onclick="showContent('about')">Sobre Diego</button>
+    <button class="button" onclick="showContent('experience')">Experiências</button>
+    <button class="button" onclick="showContent('work')">Trabalhos</button>
+    <button class="button" onclick="showForm()">Contato</button>
+  </header>
+
+  <div id="content-container">
+    <div id="about" class="content hidden">
+      <h1>Sobre Diego Vieira</h1>
+      <img src="diego.jpg" alt="Descrição da imagem" width="100" height="100">
+      <p>Mais de vinte anos de experiência em atendimento, atualmente trabalhando como coordenador de suporte técnico. Atendendo mais de quarenta países em três idiomas.</p>
+      <p>Possuo experiência como suporte técnico, monitor de qualidade e várias outras funções de atendimento.</p>
+    </div>
+    <div id="experience" class="content hidden">
+      <h1>Experiências</h1>
+      <p>Empresas:</p>
+      <ul> <!-- <ul> para lista não ordenada -->
+        <li><b>Fundación Universitaria Iberoamericana</b> - 05/2011 - Trabalhando atualmente</li>
+        <li><b>CIANET</b> - 01/2009 - 07/2010</li>
+        <li><b>GLOBALNOVA</b> - 03/2007 - 12/2009</li>
+        <li><b>SOFTWAY</b> - 09/2003 - 12/2006</li>
+      </ul>
+    </div>
+    <div id="work" class="content hidden">
+      <h1>Trabalhos</h1>
+      <p>Trabalho de prototipação para a Uninter:</p>
+      <a href="https://encurtador.com.br/mnOSU">Link para o trabalho</a> <!--  Adicione o texto do link -->
+    </div>
+  </div>
+
+  <div class="form" id="contact">
+    <h1>Contato</h1>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
